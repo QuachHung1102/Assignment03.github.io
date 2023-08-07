@@ -1,0 +1,71 @@
+#project-charter {
+    background-color: #0000ff;
+}
+.project-charter-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 25px;
+    padding: 20px;
+    border: 20px solid #0000ff;
+}
+.project-charter-content h4 {
+    color: #0000ff;
+}
+.goals,
+.team,
+.timeline,
+.scopes,
+.primary {
+    margin-bottom: 35px;
+}
+.goal-items,
+.team-items,
+.timeline-items,
+.primary-items {
+    display: flex;
+}
+
+.goal-items {
+    border-bottom: 1px solid #e1ecef;
+}
+.timeline-items-text {
+    border-bottom: 1px dotted #68c5cb;
+}
+.goal-items i,
+.team-items i,
+.timeline i,
+.primary-items i {
+    margin: 10px 20px;
+}
+.goal-items-text,
+.team-items-text,
+.timeline-items-text {
+    margin-top: 5px;
+}
+.goal-items-text p,
+.team-items-text p,
+.timeline-items-text p,
+.primary-items-text p {
+    margin: 0;
+}
+h3 {
+    font-size: 18px;
+}
+.scopes-items {
+    margin-bottom: 10px;
+}
+.scopes-items p {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.timeline {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+}
+
+@media screen and (max-width: 992px) {
+    .project-charter-content {
+        display: block;
+    }
+}
